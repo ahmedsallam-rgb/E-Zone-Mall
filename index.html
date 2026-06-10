@@ -67,7 +67,6 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);min-h
 .dot-b{background:var(--blue)}.dot-a{background:var(--amber)}.dot-t{background:var(--teal)}
 .tl-week{font-size:12px;font-weight:700;color:var(--text3);margin-bottom:.2rem;text-transform:uppercase;letter-spacing:.04em}
 .tl-text{font-size:14px;color:var(--text2)}
-/* HOOKS — redesigned */
 .hook-cat{margin-bottom:1.5rem}
 .hook-cat-title{font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.6rem;display:flex;align-items:center;gap:8px}
 .hook-cat-title::after{content:'';flex:1;height:1px;background:var(--border)}
@@ -81,34 +80,38 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);min-h
 .ht-identity{background:#2a1f2e;color:#e879f9}
 .hook-text{font-size:14px;color:var(--text);font-style:italic;line-height:1.6}
 .hook-note{font-size:12px;color:var(--text3);margin-top:.3rem;font-style:normal}
-/* VIDEO */
 .video-card{background:var(--bg3);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:1rem}
 .vc-header{padding:1rem 1.5rem;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
 .vc-title{font-size:16px;font-weight:700;color:var(--text)}
 .vc-body{padding:1.25rem 1.5rem}
 .scene{border-right:2px solid var(--blue);padding:.6rem 1rem;margin-bottom:.6rem;background:var(--bg4);border-radius:0 8px 8px 0}
-.scene.a{border-color:var(--amber)}.scene.t{border-color:var(--teal)}.scene.c{border-color:var(--coral)}
+.scene.a{border-color:var(--amber)}.scene.t{border-color:var(--teal)}.scene.c{border-color:var(--coral)}.scene.r{border-color:var(--red)}
 .scene-time{font-size:11px;color:var(--text3);margin-bottom:.2rem;font-weight:600}
 .scene-text{font-size:14px;color:var(--text)}
 .scene-note{font-size:12px;color:var(--text2);margin-top:.2rem}
-/* ORGANIC */
 .organic-card{background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:1.25rem 1.5rem;margin-bottom:1rem}
 .oc-header{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
 .oc-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
-.oc-icon-b{background:var(--blue-dim)}
-.oc-icon-a{background:var(--amber-dim)}
-.oc-icon-t{background:var(--teal-dim)}
-.oc-icon-c{background:var(--coral-dim)}
-.oc-icon-p{background:var(--purple-dim)}
-.oc-icon-r{background:var(--red-dim)}
+.oc-icon-b{background:var(--blue-dim)}.oc-icon-a{background:var(--amber-dim)}.oc-icon-t{background:var(--teal-dim)}
+.oc-icon-c{background:var(--coral-dim)}.oc-icon-p{background:var(--purple-dim)}.oc-icon-r{background:var(--red-dim)}
 .oc-title{font-size:15px;font-weight:700;color:var(--text)}
 .oc-badge{font-size:11px;margin-right:auto}
-/* COMPETITOR */
 .comp-attack{background:var(--red-dim);border:1px solid #5a1a1a;border-radius:10px;padding:1rem 1.25rem;margin-bottom:.75rem}
 .comp-attack-title{font-size:13px;font-weight:700;color:var(--red);margin-bottom:.4rem}
 .comp-attack-text{font-size:14px;color:#fca5a5;line-height:1.6}
 .comp-counter{background:var(--teal-dim);border:1px solid #0d4a30;border-radius:10px;padding:.6rem 1rem;margin-top:.4rem}
 .comp-counter-text{font-size:13px;color:var(--teal)}
+/* فيديو Script */
+.script-block{background:var(--bg4);border:1px solid var(--border2);border-radius:10px;margin-bottom:.75rem;overflow:hidden}
+.script-header{padding:.6rem 1rem;background:var(--bg3);border-bottom:1px solid var(--border);font-size:12px;font-weight:700;color:var(--text3);text-transform:uppercase;letter-spacing:.04em;display:flex;align-items:center;gap:8px}
+.script-body{padding:.85rem 1rem;font-size:14px;color:var(--text);line-height:1.8}
+.script-hook{font-size:16px;font-weight:700;color:var(--amber);font-style:italic;padding:.75rem 1rem;background:var(--amber-dim);border-radius:8px;margin-bottom:.75rem}
+.script-note{font-size:12px;color:var(--text3);padding:.5rem .75rem;background:var(--bg3);border-radius:6px;margin-top:.4rem}
+.rapid-cut{display:grid;grid-template-columns:auto 1fr;gap:0;border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:.75rem}
+.rc-item{display:contents}
+.rc-shot{padding:.5rem .75rem;background:var(--blue-dim);color:var(--blue);font-size:12px;font-weight:700;border-bottom:1px solid var(--border2);display:flex;align-items:center}
+.rc-text{padding:.5rem .75rem;font-size:13px;color:var(--text2);border-bottom:1px solid var(--border2)}
+.rc-item:last-child .rc-shot,.rc-item:last-child .rc-text{border-bottom:none}
 .tbl{width:100%;border-collapse:collapse;font-size:13px}
 .tbl th{text-align:right;padding:.6rem .75rem;background:var(--bg4);color:var(--text3);font-size:11px;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border);font-weight:600}
 .tbl td{padding:.6rem .75rem;border-bottom:1px solid var(--border);color:var(--text2);vertical-align:top}
@@ -116,7 +119,6 @@ body{font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);min-h
 .tbl tr:hover td{background:var(--bg4);color:var(--text)}
 .div{height:1px;background:var(--border);margin:1.5rem 0}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1rem}
 .quote{border-right:3px solid var(--blue);padding:.75rem 1.25rem;background:var(--bg3);border-radius:0 8px 8px 0;font-size:15px;color:var(--text);font-style:italic;margin-bottom:1rem}
 .sec-header{display:flex;align-items:center;gap:10px;margin-bottom:.5rem}
 .sec-num{width:28px;height:28px;border-radius:8px;background:var(--blue-dim);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0}
@@ -128,7 +130,7 @@ h3{font-size:15px;font-weight:700;color:var(--text);margin-bottom:.75rem}
 h4{font-size:13px;font-weight:600;color:var(--text2);margin-bottom:.5rem}
 p{font-size:14px;color:var(--text2);line-height:1.7;margin-bottom:.5rem}
 strong{color:var(--text);font-weight:600}
-@media(max-width:768px){.sidebar{display:none}.main{padding:1.25rem}.stat-row{grid-template-columns:repeat(2,1fr)}.two,.three{grid-template-columns:1fr}}
+@media(max-width:768px){.sidebar{display:none}.main{padding:1.25rem}.stat-row{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.rapid-cut{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -162,6 +164,7 @@ strong{color:var(--text);font-weight:600}
     <div class="sidebar-label">الإنتاج والمحتوى</div>
     <div class="nav-item" onclick="show('videos')"><span class="nav-dot"></span>الفيديوهات الأربعة</div>
     <div class="nav-item" onclick="show('organic')"><span class="nav-dot"></span>المحتوى الأورجانيك</div>
+    <div class="nav-item" onclick="show('edu')"><span class="nav-dot"></span>اعرف حقك — Scripts</div>
     <div class="nav-item" onclick="show('hooks')"><span class="nav-dot"></span>Hook Library</div>
   </div>
   <div class="sidebar-section">
@@ -194,12 +197,10 @@ strong{color:var(--text);font-weight:600}
   <div class="card">
     <div class="card-title">الـ Positioning Statement</div>
     <div class="quote">"E-Zone — التجربة التكنولوجية الأحدث والأكثر تنوعاً في مصر. مش بس تشتري، تعيش التجربة."</div>
-    <p>الهدف الجوهري: تحويل E-Zone من "مول أجهزة" إلى <strong>Destination تكنولوجي</strong> — الناس تيجي حتى لو مش هتشتري.</p>
   </div>
   <div class="card">
     <div class="card-title">اسم الحملة الأساسية</div>
     <div class="quote" style="font-size:20px;font-weight:700;font-style:normal">ليه مش E-Zone؟</div>
-    <p>Umbrella Campaign تجمع تحتها كل المحتوى — كسر الاعتراضات، ضرب المنافسين، بناء الـ Community، وتحويل الحدث لتريند.</p>
   </div>
   <div class="two">
     <div class="card"><div class="card-title">المنافسون</div><ul><li><strong>مول التكنولوجيا</strong> — معروف، قديم في التجربة</li><li><strong>السراج مول</strong> — زحمة، مشهور، مش متخصص</li></ul></div>
@@ -236,7 +237,6 @@ strong{color:var(--text);font-weight:600}
 <!-- AUDIENCE -->
 <div class="section" id="sec-audience">
   <div class="sec-header"><div class="sec-num">03</div><div class="page-title">الجمهور المستهدف</div></div>
-  <p class="page-sub">6 شرائح — لكل شريحة Hook مختلف</p>
   <table class="tbl">
     <thead><tr><th>الشريحة</th><th>العمر</th><th>الـ Hook الأساسي</th></tr></thead>
     <tbody>
@@ -253,74 +253,49 @@ strong{color:var(--text);font-weight:600}
 <!-- OBJECTIONS -->
 <div class="section" id="sec-objections">
   <div class="sec-header"><div class="sec-num">04</div><div class="page-title">كسر الاعتراضات الأربعة</div></div>
-  <p class="page-sub">المشاكل الذهنية عند الجمهور — والرد الإبداعي على كل واحدة</p>
-  <div class="card"><div class="card-title"><span class="badge b-coral">① الركنة سيئة</span></div><p><strong>الحقيقة:</strong> مساحات واسعة للركن</p><p><strong>الرد:</strong> Walk-through فيديو داخل الـ Parking</p><div class="quote" style="margin-top:.75rem">"الركنة اللي بتقولها دي — اتفضل شوف"</div></div>
-  <div class="card"><div class="card-title"><span class="badge b-amber">② غالي</span></div><p><strong>الحقيقة:</strong> كل الفئات السعرية + مستعمل + تقسيط Triple Zero</p><p><strong>الرد:</strong> مقارنة سعر بصرية حقيقية (ضمني)</p><div class="quote" style="margin-top:.75rem">"فاكر الواجهة الحلوة يعني غالي؟ اسأل الأسعار الأول"</div></div>
-  <div class="card"><div class="card-title"><span class="badge b-blue">③ Gaming بس</span></div><p><strong>الحقيقة:</strong> Laptops / Used / Business / Printers / Networking / Imported</p><p><strong>الرد:</strong> Rapid-cut Montage لكل الأقسام</p><div class="quote" style="margin-top:.75rem">"Gaming بس؟ يبدو إنك معرفتش نص المول"</div></div>
-  <div class="card"><div class="card-title"><span class="badge b-teal">④ ترفيهي فقط</span></div><p><strong>الحقيقة:</strong> طابق تكنولوجيا كامل — المطاعم تانية</p><p><strong>الرد:</strong> لقطات الـ Business Section والمحلات</p><div class="quote" style="margin-top:.75rem">"المطاعم والكافيهات دي تانية — اللي فوقيها ده E-Zone الحقيقي"</div></div>
+  <div class="card"><div class="card-title"><span class="badge b-coral">① الركنة سيئة</span></div><p><strong>الحقيقة:</strong> مساحات واسعة للركن</p><div class="quote" style="margin-top:.75rem">"الركنة اللي بتقولها دي — اتفضل شوف"</div></div>
+  <div class="card"><div class="card-title"><span class="badge b-amber">② غالي</span></div><p><strong>الحقيقة:</strong> كل الفئات السعرية + مستعمل + تقسيط Triple Zero</p><div class="quote" style="margin-top:.75rem">"فاكر الواجهة الحلوة يعني غالي؟ اسأل الأسعار الأول"</div></div>
+  <div class="card"><div class="card-title"><span class="badge b-blue">③ Gaming بس</span></div><p><strong>الحقيقة:</strong> Laptops / Used / Business / Printers / Networking / Imported</p><div class="quote" style="margin-top:.75rem">"Gaming بس؟ يبدو إنك معرفتش نص المول"</div></div>
+  <div class="card"><div class="card-title"><span class="badge b-teal">④ ترفيهي فقط</span></div><p><strong>الحقيقة:</strong> طابق تكنولوجيا كامل — المطاعم تانية</p><div class="quote" style="margin-top:.75rem">"المطاعم والكافيهات دي تانية — اللي فوقيها ده E-Zone الحقيقي"</div></div>
 </div>
 
-<!-- COMPETITOR ATTACK -->
+<!-- COMPETITOR -->
 <div class="section" id="sec-competitor">
   <div class="sec-header"><div class="sec-num">05</div><div class="page-title">ضرب المنافسين</div></div>
-  <p class="page-sub">محتوى يستغل نقاط ضعف المنافسين لصالح E-Zone — بدون ذكر أسماء مباشرة</p>
-
+  <p class="page-sub">محتوى يستغل نقاط ضعف المنافسين — بدون ذكر أسماء مباشرة</p>
   <div class="card">
     <div class="card-title" style="color:var(--red)">زاوية ① — "متنصبش عليك"</div>
-    <p>الجمهور عنده خوف حقيقي من النصب عند شراء الإلكترونيات — استغل الخوف ده لصالحك.</p>
-    <div class="comp-attack">
-      <div class="comp-attack-title">المشكلة عند المنافسين</div>
-      <div class="comp-attack-text">مفيش ضمان مكتوب، بائع مجهول، أجهزة مش معروف مصدرها، مفيش فاتورة رسمية، تعمل إيه لو الجهاز اتخرب بعد يومين؟</div>
-    </div>
-    <div class="comp-counter">
-      <div class="comp-counter-text">✓ E-Zone: ضمان مكتوب + فاتورة رسمية + محلات معروفة + إمكانية الرجوع</div>
-    </div>
+    <div class="comp-attack"><div class="comp-attack-title">المشكلة عند المنافسين</div><div class="comp-attack-text">مفيش ضمان مكتوب، بائع مجهول، أجهزة مش معروف مصدرها، مفيش فاتورة رسمية</div></div>
+    <div class="comp-counter"><div class="comp-counter-text">✓ E-Zone: ضمان مكتوب + فاتورة رسمية + محلات معروفة</div></div>
     <div class="div"></div>
-    <h4>أفكار محتوى "متنصبش عليك"</h4>
+    <h4>أفكار المحتوى</h4>
     <ul>
-      <li>فيديو: "5 علامات إن البائع ده مش موثوق" — ثم CTA لـ E-Zone كالحل</li>
+      <li>فيديو: "5 علامات إن البائع ده مش موثوق" ← CTA لـ E-Zone</li>
       <li>Post: "قبل ما تشتري لاب من أي حتة — اسأل الأسئلة دي"</li>
       <li>Reel: "اشتريت لاب وطلع ميته؟ معانا مش هيحصل ده"</li>
-      <li>Story: "شوف الفاتورة الرسمية بتاعتنا — دي ضمانك الحقيقي"</li>
     </ul>
   </div>
-
   <div class="card">
     <div class="card-title" style="color:var(--red)">زاوية ② — "اشتري ومعاك ضمان"</div>
-    <p>الضمان مش ميزة — ده حق. وكتير من المنافسين مش بيوفروه بشكل صحيح.</p>
-    <div class="comp-attack">
-      <div class="comp-attack-title">المشكلة عند المنافسين</div>
-      <div class="comp-attack-text">ضمان شفهي مش مكتوب، ضمان على ورقة مش رسمية، "الضمان انتهى" بعد أسبوع، مفيش سيرفيس سنتر حقيقي</div>
-    </div>
-    <div class="comp-counter">
-      <div class="comp-counter-text">✓ E-Zone: ضمان واضح + شروط مكتوبة + إمكانية المتابعة</div>
-    </div>
+    <div class="comp-attack"><div class="comp-attack-title">المشكلة عند المنافسين</div><div class="comp-attack-text">ضمان شفهي مش مكتوب، "الضمان انتهى" بعد أسبوع، مفيش سيرفيس سنتر حقيقي</div></div>
+    <div class="comp-counter"><div class="comp-counter-text">✓ E-Zone: ضمان واضح + شروط مكتوبة + إمكانية المتابعة</div></div>
     <div class="div"></div>
-    <h4>أفكار محتوى "الضمان"</h4>
+    <h4>أفكار المحتوى</h4>
     <ul>
       <li>فيديو: "الفرق بين ضمان حقيقي وضمان على الكلام"</li>
-      <li>Post: "عندنا في E-Zone — الضمان مش كلام، ده عقد"</li>
       <li>Testimonial: زبون رجع بمشكلة واتحلت — قصة حقيقية</li>
       <li>Comparison بصري: بطاقة ضمان E-Zone vs ورقة مجهولة</li>
     </ul>
   </div>
-
   <div class="card">
     <div class="card-title" style="color:var(--red)">زاوية ③ — "استيراد نضيف مش شعبي"</div>
-    <p>كتير من الناس عارفين إن في فرق بين الاستيراد النظيف والاستيراد العشوائي — لكن مش عارفين يميزوا.</p>
-    <div class="comp-attack">
-      <div class="comp-attack-title">المشكلة عند المنافسين</div>
-      <div class="comp-attack-text">أجهزة مجهولة المصدر، نسخ مش أصلية، سوفت وير محلوله، باطري متبدلة، جهاز اتفتح قبل كده بدون علمك</div>
-    </div>
-    <div class="comp-counter">
-      <div class="comp-counter-text">✓ E-Zone: استيراد رسمي، مصدر معروف، سيريال نمبر أصلي، سوفت وير نظيف</div>
-    </div>
+    <div class="comp-attack"><div class="comp-attack-title">المشكلة عند المنافسين</div><div class="comp-attack-text">أجهزة مجهولة المصدر، نسخ مش أصلية، سوفت وير محلول، باطري متبدلة</div></div>
+    <div class="comp-counter"><div class="comp-counter-text">✓ E-Zone: استيراد رسمي، مصدر معروف، سيريال نمبر أصلي، سوفت وير نظيف</div></div>
     <div class="div"></div>
-    <h4>أفكار محتوى "الاستيراد النظيف"</h4>
+    <h4>أفكار المحتوى</h4>
     <ul>
-      <li>فيديو Educational: "إزاي تعرف الجهاز استيراد نظيف ولا لأ؟" — 3 طرق بسيطة</li>
-      <li>فيديو: فتح كرتونة جهاز جديد من المصدر مباشرة — Unboxing أصلي</li>
-      <li>Post: "الفرق بين الاستيراد النظيف والشعبي — بالصور"</li>
+      <li>فيديو: "إزاي تعرف الجهاز استيراد نظيف ولا لأ؟" — 3 طرق بسيطة</li>
+      <li>Unboxing أصلي: فتح كرتونة من المصدر مباشرة</li>
       <li>Reel: "تعالى نفحص الجهاز قدامك — مفيش حاجة مخبية"</li>
     </ul>
   </div>
@@ -329,19 +304,16 @@ strong{color:var(--text);font-weight:600}
 <!-- VIDEOS -->
 <div class="section" id="sec-videos">
   <div class="sec-header"><div class="sec-num">06</div><div class="page-title">الفيديوهات الأربعة</div></div>
-  <p class="page-sub">الترتيب مبني على الـ Funnel — كل فيديو بيشتغل على جمهور في مرحلة مختلفة</p>
-
   <div class="video-card">
     <div class="vc-header"><div class="vc-title">① فيديو محمد علاء</div><div><span class="badge b-blue">Awareness</span><span class="badge b-blue">Cold</span><span class="badge b-blue">3-5 د</span></div></div>
     <div class="vc-body">
       <div class="quote">"ناس كتير بتسألني عن أفضل مكان تكنولوجيا في مصر — النهارده هجاوبكم"</div>
       <div class="scene"><div class="scene-time">0:00 — 0:30</div><div class="scene-text">Hook قوي — تصوير عند المدخل، الـ Shot الأول يصدم بصرياً</div></div>
-      <div class="scene a"><div class="scene-time">0:30 — 2:00</div><div class="scene-text">جولة Authentic — علاء بيمشي ويتفاعل ويسأل عن أسعار حقيقية بطريقته الطبيعية</div></div>
-      <div class="scene t"><div class="scene-time">2:00 — 3:30</div><div class="scene-text">لحظة الـ WOW — Genuine Reaction على حاجة مش متوقعها (سعر أو تنوع)</div></div>
+      <div class="scene a"><div class="scene-time">0:30 — 2:00</div><div class="scene-text">جولة Authentic — علاء بيمشي ويتفاعل ويسأل عن أسعار حقيقية بطريقته</div></div>
+      <div class="scene t"><div class="scene-time">2:00 — 3:30</div><div class="scene-text">لحظة الـ WOW — Genuine Reaction على حاجة مش متوقعها</div></div>
       <div class="scene c"><div class="scene-time">3:30 — نهاية</div><div class="scene-text">Opinion صريح + CTA: "روحوا وشوفوا بنفسكم"</div></div>
     </div>
   </div>
-
   <div class="video-card">
     <div class="vc-header"><div class="vc-title">② Showroom Cinematic</div><div><span class="badge b-purple">Awareness</span><span class="badge b-purple">Brand Film</span><span class="badge b-purple">60-90 ث</span></div></div>
     <div class="vc-body">
@@ -352,20 +324,18 @@ strong{color:var(--text);font-weight:600}
       <div class="scene c"><div class="scene-time">1:05 — نهاية</div><div class="scene-text">Logo + موقع + "مدينة نصر — تعال وشوف"</div></div>
     </div>
   </div>
-
   <div class="video-card">
     <div class="vc-header"><div class="vc-title">③ ليه مش E-Zone؟</div><div><span class="badge b-amber">Consideration</span><span class="badge b-amber">Warm</span><span class="badge b-amber">2-3 د</span></div></div>
     <div class="vc-body">
       <div class="quote">"كل ما حد بيقولي 'ما رحتش E-Zone' — بسألوه ليه؟ وكل مرة الإجابة بتكون غلط."</div>
-      <div class="scene"><div class="scene-time">اعتراض ① — الركنة</div><div class="scene-text">Walk-through في الـ Parking — لقطة واسعة للمساحة</div></div>
-      <div class="scene a"><div class="scene-time">اعتراض ② — غالي</div><div class="scene-text">مقارنة سعر بصرية على الشاشة</div></div>
-      <div class="scene t"><div class="scene-time">اعتراض ③ — Gaming بس</div><div class="scene-text">Rapid-cut Montage: Printer، Laptop، Networking، Business</div></div>
-      <div class="scene c"><div class="scene-time">اعتراض ④ — ترفيهي فقط</div><div class="scene-text">لقطات المحلات والـ Business Section</div></div>
+      <div class="scene"><div class="scene-time">① الركنة</div><div class="scene-text">Walk-through في الـ Parking — لقطة واسعة للمساحة</div></div>
+      <div class="scene a"><div class="scene-time">② غالي</div><div class="scene-text">مقارنة سعر بصرية على الشاشة</div></div>
+      <div class="scene t"><div class="scene-time">③ Gaming بس</div><div class="scene-text">Rapid-cut Montage: Printer، Laptop، Networking، Business</div></div>
+      <div class="scene c"><div class="scene-time">④ ترفيهي فقط</div><div class="scene-text">لقطات المحلات والـ Business Section</div></div>
       <div class="div"></div>
       <div class="quote" style="font-size:16px;font-weight:700;font-style:normal">"طيب — دلوقتي بعد ما عرفت الحقيقة... ليه مش E-Zone؟"</div>
     </div>
   </div>
-
   <div class="video-card">
     <div class="vc-header"><div class="vc-title">④ حرب E-Zone</div><div><span class="badge b-coral">Conversion</span><span class="badge b-coral">Sketch كوميدي</span><span class="badge b-coral">2-4 د</span></div></div>
     <div class="vc-body">
@@ -373,7 +343,7 @@ strong{color:var(--text);font-weight:600}
       <div class="scene"><div class="scene-time">الدخول</div><div class="scene-text">الزبون يدخل — Cinematic Shot للمول في الـ Background</div></div>
       <div class="scene a"><div class="scene-time">الحرب تبدأ</div><div class="scene-text">تاجر 1: "أرخص سعر!" — تاجر 2: "ضمان 3 سنين!" — تاجر 3: "تقسيط صفر!"</div></div>
       <div class="scene t"><div class="scene-time">Escalation</div><div class="scene-text">Gag: تاجر بيجيب كرسي للزبون عشان يستريح ويقارن!</div></div>
-      <div class="scene c"><div class="scene-time">الختام</div><div class="scene-text">الزبون: "أنا اللي كسبت" — بيضحك ويشتري. Cut: "الزبون دايماً الفايز"</div></div>
+      <div class="scene c"><div class="scene-time">الختام</div><div class="scene-text">الزبون: "أنا اللي كسبت" — بيضحك ويشتري. "الزبون دايماً الفايز"</div></div>
     </div>
   </div>
 </div>
@@ -386,17 +356,17 @@ strong{color:var(--text);font-weight:600}
   <div class="organic-card">
     <div class="oc-header">
       <div class="oc-icon oc-icon-b">🎬</div>
-      <div class="oc-title">Transitional Hooks — فيديوهات التحول المفاجئ</div>
+      <div class="oc-title">Transitional Hooks — نقلات الترند</div>
       <span class="badge b-blue oc-badge">Viral High</span>
     </div>
-    <p>فيديوهات بيحصل فيها تحول بصري مفاجئ بين مشهدين — من اللحظة دي الجمهور مش قادر يوقف التشغيل. ممكن تتصور أو تستخدم Stock.</p>
+    <p>استخدم أحدث ترند في النقلات وقت التصوير — الـ Transition نفسه بيتغير مع كل ترند جديد. الأفكار دي ثابتة، الـ Format بيتحدث.</p>
     <div class="div"></div>
-    <h4>الأفكار المقترحة لـ E-Zone</h4>
+    <h4>الأفكار الثابتة — الـ Transition يتختار وقت التصوير</h4>
     <ul>
-      <li><strong>Transition 1:</strong> شخص في مكان قديم مظلم → Transition → نفس الشخص في E-Zone بإضاءة قوية وأجهزة حواليه. الجملة: "في الفرق ده — E-Zone"</li>
-      <li><strong>Transition 2:</strong> شاشة لاب قديم وبطيء → Transition → Setup Gaming كامل من E-Zone. الجملة: "الأب جرب كمان"</li>
-      <li><strong>Transition 3:</strong> شخص واقف في طابور طويل في مول مزحوم → Transition → نفس الشخص راحة في E-Zone مع قهوة</li>
-      <li><strong>Transition 4:</strong> فاتورة غالية جداً → Transition → نفس المنتج في E-Zone بسعر أقل. الجملة: "ده كان ممكن يحصل"</li>
+      <li>مكان قديم مظلم → E-Zone بإضاءة وأجهزة. الجملة: "في الفرق ده — E-Zone"</li>
+      <li>شاشة لاب قديم وبطيء → Setup Gaming كامل من E-Zone</li>
+      <li>طابور طويل في مول مزحوم → راحة في E-Zone مع قهوة</li>
+      <li>فاتورة غالية → نفس المنتج في E-Zone بسعر أقل. الجملة: "ده كان ممكن يحصل"</li>
     </ul>
   </div>
 
@@ -406,16 +376,16 @@ strong{color:var(--text);font-weight:600}
       <div class="oc-title">فيديو "العربية جاية عليه"</div>
       <span class="badge b-red oc-badge">Viral Very High</span>
     </div>
-    <p>شخص بيتكلم في الشارع وعربية جاية عليه من ورا اكنها هتخبطه — ثم لقطة من زاوية تانية وهو بيكمل كلامه وعربية تانية جاية. النوع ده بيجمع بين الـ Shock والـ Humor وبيخلي الناس تعيد التشغيل.</p>
+    <p>شخص بيتكلم في الشارع وعربية جاية عليه من ورا اكنها هتخبطه — ثم لقطة من زاوية تانية وهو بيكمل كلامه وعربية تانية جاية. الـ Shock + الـ Humor بيخلي الناس تعيد التشغيل.</p>
     <div class="div"></div>
-    <h4>نسخة E-Zone</h4>
+    <h4>نسخة ① — في الشارع</h4>
     <ul>
-      <li>شخص بيتكلم عن سعر لاب في مكان تاني: "اشتريت اللاب بـ..." — عربية جاية عليه</li>
-      <li>لقطة تانية: نفس الشخص بيكمل "...بس بعدين عرفت إن E-Zone كان عنده بـ أقل"</li>
-      <li>الجملة الختامية على الشاشة: "متصدمش مرتين — اسأل E-Zone الأول"</li>
+      <li>شخص بيتكلم: "اشتريت اللاب بـ..." — عربية جاية عليه → لقطة تانية</li>
+      <li>بيكمل: "...بس بعدين عرفت إن E-Zone كان عنده بـ أقل"</li>
+      <li>الجملة الختامية: "متصدمش مرتين — اسأل E-Zone الأول"</li>
     </ul>
     <div class="div"></div>
-    <h4>نسخة ثانية — من داخل العربية</h4>
+    <h4>نسخة ② — من داخل العربية</h4>
     <ul>
       <li>تصوير من جوا العربية — شخص ماشي على الرصيف</li>
       <li>السواق حادف بكوباية القهوة على الشخص اكنه هيضربه</li>
@@ -431,14 +401,10 @@ strong{color:var(--text);font-weight:600}
       <div class="oc-title">فيديو اللوجو على الحيطان</div>
       <span class="badge b-purple oc-badge">Brand Awareness</span>
     </div>
-    <p>لوجو E-Zone بيتصور على أكثر من حيطة في أماكن مختلفة في القاهرة — ثم Montage سريع بيعرضهم ورا بعض. بيخلق إحساس إن البراند موجود في كل حتة.</p>
-    <div class="div"></div>
-    <h4>تفاصيل التنفيذ</h4>
     <ul>
+      <li>لوجو E-Zone يتصور في أماكن مختلفة في القاهرة — كل لقطة 2-3 ثانية</li>
       <li>مواقع مقترحة: ميدان التحرير، رابعة العدوية، سيتي ستارز، المعادي، وسط البلد</li>
-      <li>استخدام Projection أو Chalk أو Sticker مؤقت — مش لازم يبقى دايم</li>
-      <li>كل لوجو يتصور بـ Short Clip 2-3 ثانية</li>
-      <li>المونتاج النهائي: كل اللوجوهات ورا بعض بموسيقى واحدة</li>
+      <li>Montage سريع بيعرضهم ورا بعض بموسيقى واحدة</li>
       <li>الجملة الختامية: "E-Zone — في كل حتة. وفي مدينة نصر هتلاقي كل حاجة"</li>
     </ul>
   </div>
@@ -446,113 +412,214 @@ strong{color:var(--text);font-weight:600}
   <div class="organic-card">
     <div class="oc-header">
       <div class="oc-icon oc-icon-a">💰</div>
-      <div class="oc-title">Budget Challenge Series</div>
+      <div class="oc-title">فيديو العروض الـ Rapid-cut</div>
       <span class="badge b-amber oc-badge">Engagement High</span>
     </div>
-    <ul>
-      <li>"دخلت E-Zone بـ 5,000 ج.م — اشتريت إيه؟" — Documentation كاملة</li>
-      <li>"أحسن Setup Gaming بأقل ميزانية" — Challenge مفتوح للمتابعين</li>
-      <li>"قارن بنفسك — نفس اللاب بكام في 3 أماكن مختلفة"</li>
-    </ul>
+    <p>فيديو واحد — Rapid-cut بين عروض حقيقية من المول. كل لقطة سؤال + منتج بسعره الحقيقي.</p>
+    <div class="div"></div>
+    <div class="rapid-cut">
+      <div class="rc-item">
+        <div class="rc-shot">لقطة ١</div>
+        <div class="rc-text">"عايز تجميعة Gaming كاملة بـ 20,000 ج.م؟" ← لقطة الـ Setup كامل</div>
+      </div>
+      <div class="rc-item">
+        <div class="rc-shot">لقطة ٢</div>
+        <div class="rc-text">"عايز لاب شغال بـ 5,000 ج.م؟" ← لقطة اللاب المستعمل</div>
+      </div>
+      <div class="rc-item">
+        <div class="rc-shot">لقطة ٣</div>
+        <div class="rc-text">"عايز شنطة أصلية بسعر كويس؟" ← لقطة الشنطة</div>
+      </div>
+      <div class="rc-item">
+        <div class="rc-shot">لقطة ٤</div>
+        <div class="rc-text">"عايز طابعة للشغل؟" ← لقطة الطابعة بسعرها</div>
+      </div>
+      <div class="rc-item">
+        <div class="rc-shot">لقطة ٥</div>
+        <div class="rc-text">"عايز شاشة Gaming؟" ← لقطة الشاشة</div>
+      </div>
+      <div class="rc-item">
+        <div class="rc-shot">ختام</div>
+        <div class="rc-text">"كل ده — وأكتر. E-Zone مدينة نصر"</div>
+      </div>
+    </div>
+    <p style="margin-top:.5rem"><strong>ملاحظة:</strong> الأسعار والمنتجات بتتحدث من المول قبل التصوير — اللقطات دي بتتجدد كل أسبوع مع العروض الجديدة.</p>
+  </div>
+</div>
+
+<!-- EDU SCRIPTS -->
+<div class="section" id="sec-edu">
+  <div class="sec-header"><div class="sec-num">08</div><div class="page-title">اعرف حقك — Scripts كاملة</div></div>
+  <p class="page-sub">4 فيديوهات Educational هي في الأساس ضرب ضمني للمنافسين + تقوية لـ E-Zone</p>
+
+  <!-- Script 1 -->
+  <div class="video-card">
+    <div class="vc-header">
+      <div class="vc-title">① إزاي تعرف اللاب Refurbished ولا جديد؟</div>
+      <div><span class="badge b-red">ضرب منافسين</span><span class="badge b-teal">Trust</span></div>
+    </div>
+    <div class="vc-body">
+      <div class="script-hook">"اشتريت لاب جديد؟ — اعمل الـ 3 حاجات دول دلوقتي وهتعرف الحقيقة"</div>
+      <div class="script-block">
+        <div class="script-header">📍 المحتوى</div>
+        <div class="script-body">
+          <strong>النقطة الأولى — Serial Number:</strong><br>
+          "روح على الـ BIOS أو على ظهر اللاب — شوف الـ Serial Number، ادخله على موقع الشركة. لو مش بيطلعلك حاجة — في مشكلة."<br><br>
+          <strong>النقطة الثانية — Battery Health:</strong><br>
+          "افتح CMD، اكتب: powercfg /batteryreport — لو الـ Battery Capacity نزلت تحت 80% — اللاب ده اتستخدم كتير."<br><br>
+          <strong>النقطة الثالثة — Windows License:</strong><br>
+          "اضغط Windows + R، اكتب: slmgr /xpr — لو طلعلك 'The machine is permanently activated' مش على OEM ← السوفت وير ده مش أصلي."
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-header">🎯 الـ CTA</div>
+        <div class="script-body">"عندنا في E-Zone — كل جهاز بيتفحص قدامك قبل ما تدفع. مش محتاج تتعب نفسك."</div>
+      </div>
+      <div class="script-note">⚙️ Format: شخص بيعمل الخطوات على لاب حقيقي — Screen Recording مع Face Cam</div>
+    </div>
   </div>
 
-  <div class="organic-card">
-    <div class="oc-header">
-      <div class="oc-icon oc-icon-t">✅</div>
-      <div class="oc-title">Educational "اعرف حقك" Series</div>
-      <span class="badge b-teal oc-badge">Trust Building</span>
+  <!-- Script 2 -->
+  <div class="video-card">
+    <div class="vc-header">
+      <div class="vc-title">② 3 أسئلة لازم تسألهم قبل ما تشتري أي جهاز</div>
+      <div><span class="badge b-red">ضرب منافسين</span><span class="badge b-teal">Trust</span></div>
     </div>
-    <ul>
-      <li>"إزاي تعرف اللاب ده Refurbished ولا جديد؟"</li>
-      <li>"3 أسئلة لازم تسألهم قبل ما تشتري أي جهاز"</li>
-      <li>"الفرق بين الاستيراد النظيف والشعبي — بالصور"</li>
-      <li>"ضمانك الحقيقي إيه؟ — دليل المستهلك"</li>
-    </ul>
+    <div class="vc-body">
+      <div class="script-hook">"البائع مش هيقولك الكلام ده — بس أنت لازم تسأل"</div>
+      <div class="script-block">
+        <div class="script-header">📍 المحتوى</div>
+        <div class="script-body">
+          <strong>السؤال الأول:</strong> "الضمان ده مكتوب فين؟"<br>
+          "لو قالك 'ضمان عندنا' من غير ورقة — ده مش ضمان، ده كلام."<br><br>
+          <strong>السؤال الثاني:</strong> "الجهاز ده فُتح قبل كده؟"<br>
+          "شوف الـ Screws — لو فيه خدش أو اللون اتغير ← اتفتح قبل كده."<br><br>
+          <strong>السؤال الثالث:</strong> "لو عندي مشكلة — هرجع فين؟"<br>
+          "لو البائع مش عارف يجاوب أو قالك 'تعالى ونشوف' — ابعد."
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-header">🎯 الـ CTA</div>
+        <div class="script-body">"في E-Zone — الإجابة على الأسئلة دي واضحة قبل ما تسأل. فاتورة، ضمان مكتوب، وعنوان تيجي له."</div>
+      </div>
+      <div class="script-note">⚙️ Format: Talking Head في الشارع أو في المول — كاميرا على الـ Shoulder</div>
+    </div>
+  </div>
+
+  <!-- Script 3 -->
+  <div class="video-card">
+    <div class="vc-header">
+      <div class="vc-title">③ الفرق بين الاستيراد النظيف والشعبي</div>
+      <div><span class="badge b-red">ضرب منافسين</span><span class="badge b-teal">Trust</span></div>
+    </div>
+    <div class="vc-body">
+      <div class="script-hook">"فيه فرق كبير بين الاتنين — وبتدفع نفس الفلوس"</div>
+      <div class="script-block">
+        <div class="script-header">📍 المحتوى — Comparison بصري</div>
+        <div class="script-body">
+          <strong>الاستيراد الشعبي:</strong><br>
+          كرتونة بدون طباعة واضحة / سيريال نمبر مش موجود على الموقع / شاحن مش أصلي / Windows مش مفعّل بشكل صحيح / باطري استهلكت<br><br>
+          <strong>الاستيراد النظيف (E-Zone):</strong><br>
+          كرتونة أصلية مختومة / سيريال موثق / ملحقات أصلية كاملة / Windows OEM أصلي / باطري جديدة
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-header">🎯 الـ CTA</div>
+        <div class="script-body">"E-Zone بس بيجيب الاستيراد النظيف — شوف الفرق بنفسك."</div>
+      </div>
+      <div class="script-note">⚙️ Format: Side by Side بصري — الكاميرا بتعرض الاتنين جنب بعض</div>
+    </div>
+  </div>
+
+  <!-- Script 4 -->
+  <div class="video-card">
+    <div class="vc-header">
+      <div class="vc-title">④ ضمانك الحقيقي إيه؟</div>
+      <div><span class="badge b-red">ضرب منافسين</span><span class="badge b-teal">Trust</span></div>
+    </div>
+    <div class="vc-body">
+      <div class="script-hook">"الضمان اللي معاك ده — هل هو حقيقي ولا على الكلام؟ اعرف الفرق في 60 ثانية"</div>
+      <div class="script-block">
+        <div class="script-header">📍 المحتوى</div>
+        <div class="script-body">
+          <strong>ضمان على الكلام:</strong> "عندنا ضمان سنة" — بدون ورقة، بدون عنوان، بدون رقم خدمة عملاء واضح. لما ترجع: "ده خارج الضمان"<br><br>
+          <strong>ضمان حقيقي:</strong> ورقة مكتوب فيها المدة، الشروط، وإيه اللي بيتغطي وإيه اللي مش بيتغطي. في رقم تيجي له. في عنوان تروح له.
+        </div>
+      </div>
+      <div class="script-block">
+        <div class="script-header">🎯 الـ CTA</div>
+        <div class="script-body">"في E-Zone — الضمان مش كلام. ده ورقة في إيدك من أول يوم."</div>
+      </div>
+      <div class="script-note">⚙️ Format: بطاقة ضمان E-Zone تتعرض على الكاميرا — Show don't tell</div>
+    </div>
   </div>
 </div>
 
 <!-- HOOKS -->
 <div class="section" id="sec-hooks">
-  <div class="sec-header"><div class="sec-num">08</div><div class="page-title">Hook Library</div></div>
+  <div class="sec-header"><div class="sec-num">09</div><div class="page-title">Hook Library</div></div>
   <p class="page-sub">هوكات مصنفة حسب النوع السيكولوجي — لكل منصة ونوع محتوى</p>
-
   <div class="hook-cat">
     <div class="hook-cat-title">Visual Shock — الصدمة البصرية</div>
-    <div class="hook-item"><span class="hook-type ht-visual">Visual</span><div><div class="hook-text">"دخلت E-Zone عشان آخد طابعة... خرجت بـ Gaming Setup كامل"</div><div class="hook-note">يشتغل على TikTok و Reels — Transition Hook</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-visual">Visual</span><div><div class="hook-text">"الفرق ده — بين مول عادي وبين E-Zone" [Before/After بصري]</div><div class="hook-note">Static Post على Facebook — Engagement عالي</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-visual">Visual</span><div><div class="hook-text">"مش هتصدق إن ده موجود في مدينة نصر" [Showroom Shot]</div><div class="hook-note">Opening لأي Reel أو TikTok</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-visual">Visual</span><div><div class="hook-text">"دخلت E-Zone عشان آخد طابعة... خرجت بـ Gaming Setup كامل"</div><div class="hook-note">Transition Hook — TikTok و Reels</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-visual">Visual</span><div><div class="hook-text">"الفرق ده — بين مول عادي وبين E-Zone" [Before/After بصري]</div><div class="hook-note">Static Post — Facebook Engagement عالي</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-visual">Visual</span><div><div class="hook-text">"مش هتصدق إن ده موجود في مدينة نصر"</div><div class="hook-note">Opening لأي Reel أو TikTok</div></div></div>
   </div>
-
   <div class="hook-cat">
     <div class="hook-cat-title">Fear / Loss Aversion — الخوف من الخسارة</div>
-    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"اشتريت لاب من مكان تاني؟ — اتفرج على ده الأول"</div><div class="hook-note">Hook للفيديو التعليمي "متنصبش عليك"</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"5 علامات إن البائع ده مش موثوق — رقم 3 معظم الناس بتتجاهله"</div><div class="hook-note">Educational content — Saves عالية</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"دفعت أكتر من اللازم؟ الموضوع بسيط أكتر مما بتفكر"</div><div class="hook-note">Price perception — يستهدف Budget Buyers</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"الضمان اللي معاك ده — هل هو حقيقي ولا على الكلام؟"</div><div class="hook-note">Warranty content — يستهدف Consideration Stage</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"اشتريت لاب من مكان تاني؟ — اتفرج على ده الأول"</div><div class="hook-note">Hook لفيديو "متنصبش عليك"</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"5 علامات إن البائع ده مش موثوق — رقم 3 معظم الناس بتتجاهله"</div><div class="hook-note">Educational — Saves عالية</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"الضمان اللي معاك ده — هل هو حقيقي ولا على الكلام؟ اعرف الفرق في 60 ثانية"</div><div class="hook-note">Hook فيديو الضمان — Consideration Stage</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-fear">Fear</span><div><div class="hook-text">"البائع مش هيقولك الكلام ده — بس أنت لازم تسأل"</div><div class="hook-note">Hook فيديو الأسئلة الثلاثة</div></div></div>
   </div>
-
   <div class="hook-cat">
     <div class="hook-cat-title">Curiosity Gap — فجوة الفضول</div>
-    <div class="hook-item"><span class="hook-type ht-curiosity">Curiosity</span><div><div class="hook-text">"في E-Zone فيه حاجة معظم الناس مش عارفاها — وبسببها بيدفعوا أكتر في أي مكان تاني"</div><div class="hook-note">Curiosity gap كلاسيكي — Watch Time عالي</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-curiosity">Curiosity</span><div><div class="hook-text">"سألت 10 ناس عن E-Zone — الإجابات كانت مفاجأة"</div><div class="hook-note">Man-on-street format — Relatable جداً</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-curiosity">Curiosity</span><div><div class="hook-text">"اللاب ده بكام؟ — الإجابة هتخليك تروح E-Zone دلوقتي"</div><div class="hook-note">Price reveal hook — للـ Ads</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-curiosity">Curiosity</span><div><div class="hook-text">"في E-Zone فيه حاجة معظم الناس مش عارفاها — وبسببها بيدفعوا أكتر في أي مكان تاني"</div><div class="hook-note">Watch Time عالي — Curiosity Gap كلاسيكي</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-curiosity">Curiosity</span><div><div class="hook-text">"اشتريت لاب جديد؟ — اعمل الـ 3 حاجات دول دلوقتي وهتعرف الحقيقة"</div><div class="hook-note">Hook فيديو Refurbished — Saves عالية</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-curiosity">Curiosity</span><div><div class="hook-text">"فيه فرق كبير بين الاتنين — وبتدفع نفس الفلوس"</div><div class="hook-note">Hook فيديو الاستيراد النظيف</div></div></div>
   </div>
-
   <div class="hook-cat">
     <div class="hook-cat-title">Social Proof — الإثبات الاجتماعي</div>
     <div class="hook-item"><span class="hook-type ht-social">Social</span><div><div class="hook-text">"صاحبي قالي روح E-Zone — ما صدقتوش. غلطت"</div><div class="hook-note">Testimonial format — Trust عالي</div></div></div>
     <div class="hook-item"><span class="hook-type ht-social">Social</span><div><div class="hook-text">"كل حد في الشغل عنده لاب من E-Zone — فضلت بسأل ليه"</div><div class="hook-note">Community proof — يستهدف Business Users</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-social">Social</span><div><div class="hook-text">"الناس اللي بتعرف — بتروح E-Zone"</div><div class="hook-note">Identity + Social proof معاً</div></div></div>
   </div>
-
   <div class="hook-cat">
     <div class="hook-cat-title">Challenge / Dare — التحدي</div>
-    <div class="hook-item"><span class="hook-type ht-challenge">Challenge</span><div><div class="hook-text">"قولي ميزانيتك — وأنا أقولك هتطلع بإيه من E-Zone"</div><div class="hook-note">Interactive hook — Comments عالية</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-challenge">Challenge</span><div><div class="hook-text">"تحدي: اعمل أحسن Gaming Setup بـ 8,000 ج.م من E-Zone"</div><div class="hook-note">UGC Challenge — Organic Reach</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-challenge">Challenge</span><div><div class="hook-text">"روح أي مول تاني وبعدين روح E-Zone — بعدين قولي رأيك"</div><div class="hook-note">Confidence hook — بيُظهر الثقة في المنتج</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-challenge">Challenge</span><div><div class="hook-text">"قولي ميزانيتك — وأنا أقولك هتطلع بإيه من E-Zone"</div><div class="hook-note">Interactive — Comments عالية</div></div></div>
+    <div class="hook-item"><span class="hook-type ht-challenge">Challenge</span><div><div class="hook-text">"روح أي مول تاني وبعدين روح E-Zone — بعدين قولي رأيك"</div><div class="hook-note">Confidence hook — بيُظهر الثقة</div></div></div>
   </div>
-
   <div class="hook-cat">
     <div class="hook-cat-title">Identity / Pride — الهوية والفخر</div>
     <div class="hook-item"><span class="hook-type ht-identity">Identity</span><div><div class="hook-text">"لو بتشتغل مونتاج، ديزاين، أو شغل من البيت — في مكان اتبنى عشانك"</div><div class="hook-note">يستهدف Creators و Freelancers</div></div></div>
-    <div class="hook-item"><span class="hook-type ht-identity">Identity</span><div><div class="hook-text">"مش بنبيع أجهزة — بنبني Setups للناس الجادة"</div><div class="hook-note">Positioning premium — يرفع القيمة المتصورة</div></div></div>
     <div class="hook-item"><span class="hook-type ht-identity">Identity</span><div><div class="hook-text">"E-Zone مش مول — ده مكانك أنت"</div><div class="hook-note">Community belonging — للـ Gamers تحديداً</div></div></div>
   </div>
 </div>
 
 <!-- META -->
 <div class="section" id="sec-meta">
-  <div class="sec-header"><div class="sec-num">09</div><div class="page-title">Meta Ads Structure</div></div>
-  <p class="page-sub">هيكل الحملات — شهرين</p>
+  <div class="sec-header"><div class="sec-num">10</div><div class="page-title">Meta Ads Structure</div></div>
   <div class="card"><div class="card-title">الشهر الأول — 1,000$</div>
-    <table class="tbl">
-      <thead><tr><th>الحملة</th><th>الهدف</th><th>الميزانية</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Awareness</strong></td><td>Video Views + Reach</td><td><span class="badge b-blue">400$</span></td></tr>
-        <tr><td><strong>Myth-busting</strong></td><td>Engagement + Reach</td><td><span class="badge b-blue">300$</span></td></tr>
-        <tr><td><strong>Retargeting</strong></td><td>Traffic</td><td><span class="badge b-amber">200$</span></td></tr>
-        <tr><td><strong>Event Pre-launch</strong></td><td>Leads + Event Responses</td><td><span class="badge b-amber">100$</span></td></tr>
-      </tbody>
-    </table>
+    <table class="tbl"><thead><tr><th>الحملة</th><th>الهدف</th><th>الميزانية</th></tr></thead><tbody>
+      <tr><td><strong>Awareness</strong></td><td>Video Views + Reach</td><td><span class="badge b-blue">400$</span></td></tr>
+      <tr><td><strong>Myth-busting</strong></td><td>Engagement + Reach</td><td><span class="badge b-blue">300$</span></td></tr>
+      <tr><td><strong>Retargeting</strong></td><td>Traffic</td><td><span class="badge b-amber">200$</span></td></tr>
+      <tr><td><strong>Event Pre-launch</strong></td><td>Leads + Event Responses</td><td><span class="badge b-amber">100$</span></td></tr>
+    </tbody></table>
   </div>
   <div class="card"><div class="card-title">الشهر الثاني — 2,000$</div>
-    <table class="tbl">
-      <thead><tr><th>الحملة</th><th>الميزانية</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Event Hype — Countdown + Teaser</strong></td><td><span class="badge b-amber">600$</span></td></tr>
-        <tr><td><strong>Hard Offer — ASUS + خصومات + تقسيط</strong></td><td><span class="badge b-amber">500$</span></td></tr>
-        <tr><td><strong>Retargeting Heavy</strong></td><td><span class="badge b-blue">400$</span></td></tr>
-        <tr><td><strong>Influencer Boost</strong></td><td><span class="badge b-blue">300$</span></td></tr>
-        <tr><td><strong>WhatsApp Lead Ads</strong></td><td><span class="badge b-teal">200$</span></td></tr>
-      </tbody>
-    </table>
+    <table class="tbl"><thead><tr><th>الحملة</th><th>الميزانية</th></tr></thead><tbody>
+      <tr><td><strong>Event Hype — Countdown + Teaser</strong></td><td><span class="badge b-amber">600$</span></td></tr>
+      <tr><td><strong>Hard Offer — ASUS + خصومات + تقسيط</strong></td><td><span class="badge b-amber">500$</span></td></tr>
+      <tr><td><strong>Retargeting Heavy</strong></td><td><span class="badge b-blue">400$</span></td></tr>
+      <tr><td><strong>Influencer Boost</strong></td><td><span class="badge b-blue">300$</span></td></tr>
+      <tr><td><strong>WhatsApp Lead Ads</strong></td><td><span class="badge b-teal">200$</span></td></tr>
+    </tbody></table>
   </div>
 </div>
 
 <!-- INFLUENCER -->
 <div class="section" id="sec-influencer">
-  <div class="sec-header"><div class="sec-num">10</div><div class="page-title">Influencers & UGC</div></div>
-  <p class="page-sub">مش بنشتري Reach — بنبني مصداقية مع الجمهور الصح</p>
+  <div class="sec-header"><div class="sec-num">11</div><div class="page-title">Influencers & UGC</div></div>
   <div class="card-grid">
     <div class="card"><div class="card-title"><span class="badge b-coral">Tier 1 — Macro</span></div><ul><li>100k+ متابع</li><li>Tech / Gaming</li><li>Hero Video كامل</li><li>3,000-5,000 ج.م</li></ul></div>
     <div class="card"><div class="card-title"><span class="badge b-amber">Tier 2 — Mid</span></div><ul><li>20k-80k</li><li>Tech Reviews</li><li>Dedicated Reel + Story</li><li>1,000-2,000 ج.م/شخص</li></ul></div>
@@ -563,40 +630,37 @@ strong{color:var(--text);font-weight:600}
 
 <!-- WHATSAPP -->
 <div class="section" id="sec-whatsapp">
-  <div class="sec-header"><div class="sec-num">11</div><div class="page-title">WhatsApp Funnel</div></div>
+  <div class="sec-header"><div class="sec-num">12</div><div class="page-title">WhatsApp Funnel</div></div>
   <div class="two">
     <div class="card"><div class="card-title">القناة الرسمية — Broadcast</div><ul><li>إعلانات العروض اليومية</li><li>Countdown للحدث</li><li>Winner Announcements</li><li>محتوى أسبوعي حصري</li></ul></div>
     <div class="card"><div class="card-title">المجموعة التفاعلية</div><ul><li>Community نقاش</li><li>Flash Deals حصرية للأعضاء</li><li>بناء ولاء طويل المدى</li></ul></div>
   </div>
   <div class="card"><div class="card-title">Pre-Event Conversion — 7 أيام</div>
-    <table class="tbl">
-      <thead><tr><th>اليوم</th><th>الرسالة</th></tr></thead>
-      <tbody>
-        <tr><td>يوم 7</td><td>إعلان الـ Lineup الكامل للعروض</td></tr>
-        <tr><td>يوم 5</td><td>"شوف مين هيكون هناك" — Influencer Teaser</td></tr>
-        <tr><td>يوم 3</td><td>"بقى عندك 3 أيام تشتري وتدخل السحبة"</td></tr>
-        <tr><td>يوم 1</td><td>"بكره الحدث — تأكد من العنوان والميعاد"</td></tr>
-        <tr><td>يوم 0</td><td>"الحدث اتبدأ! — Live Coverage"</td></tr>
-      </tbody>
-    </table>
+    <table class="tbl"><thead><tr><th>اليوم</th><th>الرسالة</th></tr></thead><tbody>
+      <tr><td>يوم 7</td><td>إعلان الـ Lineup الكامل للعروض</td></tr>
+      <tr><td>يوم 5</td><td>"شوف مين هيكون هناك" — Influencer Teaser</td></tr>
+      <tr><td>يوم 3</td><td>"بقى عندك 3 أيام تشتري وتدخل السحبة"</td></tr>
+      <tr><td>يوم 1</td><td>"بكره الحدث — تأكد من العنوان والميعاد"</td></tr>
+      <tr><td>يوم 0</td><td>"الحدث اتبدأ! — Live Coverage"</td></tr>
+    </tbody></table>
   </div>
 </div>
 
 <!-- BUDGET -->
 <div class="section" id="sec-budget">
-  <div class="sec-header"><div class="sec-num">12</div><div class="page-title">الميزانية الإعلانية</div></div>
+  <div class="sec-header"><div class="sec-num">13</div><div class="page-title">الميزانية الإعلانية</div></div>
   <div class="stat-row">
     <div class="stat"><div class="stat-val">60%</div><div class="stat-lbl">Meta Ads</div></div>
     <div class="stat"><div class="stat-val">20%</div><div class="stat-lbl">Influencers</div></div>
     <div class="stat"><div class="stat-val">15%</div><div class="stat-lbl">TikTok Ads</div></div>
     <div class="stat"><div class="stat-val">5%</div><div class="stat-lbl">Google Ads</div></div>
   </div>
-  <div class="card"><div class="card-title">TikTok Strategy</div><ul><li><strong>Organic أولاً:</strong> 15-20 فيديو قبل أي إنفاق Paid</li><li>الـ Algorithm بيكافئ الـ Organic Traction</li><li>أفضل محتوى: Transition Hooks + "العربية جاية عليه" + Challenge</li><li><strong>Spark Ads:</strong> Boost الفيديوهات ذات الأداء الكويس فقط</li></ul></div>
+  <div class="card"><div class="card-title">TikTok Strategy</div><ul><li><strong>Organic أولاً:</strong> 15-20 فيديو قبل أي إنفاق Paid</li><li>أفضل محتوى: Transition Hooks + "العربية جاية عليه" + Educational</li><li><strong>Spark Ads:</strong> Boost الفيديوهات ذات الأداء الكويس فقط</li></ul></div>
 </div>
 
 <!-- EVENT -->
 <div class="section" id="sec-event">
-  <div class="sec-header"><div class="sec-num">13</div><div class="page-title">Big Day — عيد الميلاد</div></div>
+  <div class="sec-header"><div class="sec-num">14</div><div class="page-title">Big Day — عيد الميلاد</div></div>
   <p class="page-sub">15 يوليو 2025</p>
   <div class="stat-row">
     <div class="stat"><div class="stat-val">10</div><div class="stat-lbl">لابات ASUS للسحب</div></div>
@@ -605,15 +669,12 @@ strong{color:var(--text);font-weight:600}
     <div class="stat"><div class="stat-val">فاتورة</div><div class="stat-lbl">شرط دخول السحب</div></div>
   </div>
   <div class="card"><div class="card-title">Giveaway Mechanics المتدرجة</div>
-    <table class="tbl">
-      <thead><tr><th>الشراء</th><th>المكافأة</th></tr></thead>
-      <tbody>
-        <tr><td>أي منتج</td><td>دخول السحب الكبير (10 لابات ASUS)</td></tr>
-        <tr><td>شراء بـ 5,000+ ج.م</td><td>كارت خصم إضافي في المطاعم</td></tr>
-        <tr><td>شراء بـ 10,000+ ج.م</td><td>دخول سحب إضافي</td></tr>
-        <tr><td>Share الفاتورة على Story + Tag</td><td>دخولين بدل واحد</td></tr>
-      </tbody>
-    </table>
+    <table class="tbl"><thead><tr><th>الشراء</th><th>المكافأة</th></tr></thead><tbody>
+      <tr><td>أي منتج</td><td>دخول السحب الكبير (10 لابات ASUS)</td></tr>
+      <tr><td>شراء بـ 5,000+ ج.م</td><td>كارت خصم إضافي في المطاعم</td></tr>
+      <tr><td>شراء بـ 10,000+ ج.م</td><td>دخول سحب إضافي</td></tr>
+      <tr><td>Share الفاتورة على Story + Tag</td><td>دخولين بدل واحد</td></tr>
+    </tbody></table>
   </div>
   <div class="card"><div class="card-title">Hype System — 4 أسابيع</div>
     <div class="tl-wrap">
@@ -628,7 +689,7 @@ strong{color:var(--text);font-weight:600}
 
 <!-- POSITIONING -->
 <div class="section" id="sec-positioning">
-  <div class="sec-header"><div class="sec-num">14</div><div class="page-title">Positioning</div></div>
+  <div class="sec-header"><div class="sec-num">15</div><div class="page-title">Positioning</div></div>
   <div class="two">
     <div class="card"><div class="card-title">مقابل مول التكنولوجيا</div>
       <table class="tbl"><thead><tr><th>مول التكنولوجيا</th><th>E-Zone</th></tr></thead><tbody>
@@ -648,16 +709,16 @@ strong{color:var(--text);font-weight:600}
 
 <!-- TIMELINE -->
 <div class="section" id="sec-timeline">
-  <div class="sec-header"><div class="sec-num">15</div><div class="page-title">Campaign Timeline</div></div>
+  <div class="sec-header"><div class="sec-num">16</div><div class="page-title">Campaign Timeline</div></div>
   <div class="card">
     <div class="tl-wrap">
       <div class="tl-item"><div class="tl-dot dot-b"></div><div class="tl-week">أسبوع 1 — يونيو</div><div class="tl-text">إطلاق الصفحات، Hero Video، Showroom، بداية Paid Reach</div></div>
-      <div class="tl-item"><div class="tl-dot dot-b"></div><div class="tl-week">أسبوع 2</div><div class="tl-text">"بيقولوا علينا" Series، Organic Content يبدأ على TikTok</div></div>
-      <div class="tl-item"><div class="tl-dot dot-b"></div><div class="tl-week">أسبوع 3</div><div class="tl-text">Social Proof + UGC، Retargeting، WhatsApp Launch، Competitor Content</div></div>
-      <div class="tl-item"><div class="tl-dot dot-b"></div><div class="tl-week">أسبوع 4</div><div class="tl-text">Macro Influencer Visit، Transition Hooks، Lead Gen للـ Event</div></div>
+      <div class="tl-item"><div class="tl-dot dot-b"></div><div class="tl-week">أسبوع 2</div><div class="tl-text">"بيقولوا علينا" Series، Organic TikTok يبدأ، Transition Hooks</div></div>
+      <div class="tl-item"><div class="tl-dot dot-b"></div><div class="tl-week">أسبوع 3</div><div class="tl-text">Educational "اعرف حقك" Series، Retargeting، WhatsApp Launch</div></div>
+      <div class="tl-item"><div class="tl-dot dot-b"></div><div class="tl-week">أسبوع 4</div><div class="tl-text">Rapid-cut العروض، "العربية جاية عليه"، Lead Gen للـ Event</div></div>
       <div class="tl-item"><div class="tl-dot dot-a"></div><div class="tl-week">أسبوع 5 — يوليو</div><div class="tl-text">Teaser الحدث، Countdown يبدأ، ASUS Reveal</div></div>
       <div class="tl-item"><div class="tl-dot dot-a"></div><div class="tl-week">أسبوع 6</div><div class="tl-text">Event Registration Open، Hard Offer Ads، Influencer Hype</div></div>
-      <div class="tl-item"><div class="tl-dot dot-a"></div><div class="tl-week">أسبوع 7</div><div class="tl-text">Full FOMO — Countdown يومي + WhatsApp Broadcasts + "العربية جاية عليه"</div></div>
+      <div class="tl-item"><div class="tl-dot dot-a"></div><div class="tl-week">أسبوع 7</div><div class="tl-text">Full FOMO — Countdown يومي + WhatsApp Broadcasts</div></div>
       <div class="tl-item"><div class="tl-dot dot-t"></div><div class="tl-week">🎉 يوم 15/7 — Big Day</div><div class="tl-text">Live Coverage، On-ground Activation، Giveaway Draw، Winner Announcement</div></div>
       <div class="tl-item"><div class="tl-dot dot-t"></div><div class="tl-week">ما بعد الحدث</div><div class="tl-text">Recap Video، Winner Stories، الإعلان عن الحدث الجاي</div></div>
     </div>
